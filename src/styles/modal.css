@@ -1,0 +1,23 @@
+dialog{
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 50%;
+    border: 0px;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+}
+dialog::backdrop {
+    background-color: rgba(33, 37, 41, 0.5);
+}
+.closeModal__button{
+    position: absolute;
+    top:0.8rem;
+    right: 0.8rem;
+    border-radius: 50%;
+    width: 2.1rem;
+    height: 2.1rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #f8f9fa;
+    color: #868e96;
+}

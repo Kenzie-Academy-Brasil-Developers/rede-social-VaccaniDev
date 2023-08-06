@@ -1,0 +1,95 @@
+@import url("globalStyle.css");
+@import url("texts.css");
+@import url("buttons.css");
+@import url("inputs.css");
+@import url("modal.css");
+header{
+    background-color: var(--color-grey1);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 5%;
+    position: fixed;
+    top:0;
+    width: 100%;
+}
+main {
+    justify-content: center;
+    max-width: 90%;
+    margin: 6rem 5%;
+}    
+.section__PostAndSuggestions{
+    display: flex;
+    gap: 6rem;
+    max-width: 100%;
+}
+.div__profile{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+.img__profile{
+    height: 3.125rem;
+    margin-right: 0.75rem;
+}
+.form__post{
+    display: flex;
+    flex-direction: column;
+    /* gap: 0.75rem; */
+    gap: 1.5rem;
+}
+.list__suggestions{
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.title__suggestions{
+    margin-bottom: 2.5rem;
+}
+.section__post{
+    width: 65%;
+}
+.section__suggestions{
+    width: 35%;
+}
+.section__posts{
+    width: 60%;
+}
+
+.article__footerPost{
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.article__posts{
+    gap: 4%;
+    margin: 3.5rem 0 3.5rem 0;
+}
+.article__titlePost{
+    margin: 2rem 0 2rem 0;
+}
+
+@media(max-width: 1025px){
+    .section__suggestions{
+        width: 100%;
+        overflow-y: auto;
+    }
+    .section__PostAndSuggestions{
+        display: grid;
+    }
+    .section__post, .section__posts{
+        width: 100%;
+    }
+
+    .list__suggestions{
+        display: grid;
+        margin: 1rem 1rem;
+    }
+    .ListFather__suggestions{
+        display:flex;
+    }
+    .div__infoProfile{
+        margin: 1rem 0 1.5rem 0;
+        width: 10rem;
+    }
+}

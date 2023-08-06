@@ -1,0 +1,12 @@
+#input__title, #textarea__post{
+    font-weight: var(--text1-font-weigt);
+    font-size: var( --text1-font-size);
+    line-height: var(--text1-line-height);
+    resize: none;
+    border: solid 3px var(--color-grey4);
+    border-radius: 0.25rem;
+    padding: 5px 15px;
+}
+#input__title:focus, #textarea__post:focus{
+    border-color: var(--color-brand-2);
+}
